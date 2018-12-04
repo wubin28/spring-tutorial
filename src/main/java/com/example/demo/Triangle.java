@@ -1,7 +1,7 @@
 package com.example.demo;
 
 
-public class Triangle {
+public class Triangle implements Shape {
     private Point pointA;
     private Point pointB;
     private Point pointC;
@@ -30,7 +30,11 @@ public class Triangle {
         this.pointC = pointC;
     }
 
+    @Override
     public void draw() {
-        System.out.println("I'm drawing...");
+        System.out.println("Drawing triangle...");
+        System.out.println("Point A = (" + pointA.getX() + ", " + pointA.getY() + ")");
+        System.out.println("Point B = (" + pointB.getX() + ", " + pointB.getY() + ")");
+        System.out.println("Point C = (" + pointC.getX() + ", " + pointB.getY() + ")");
     }
 }

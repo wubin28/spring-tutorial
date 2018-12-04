@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class DemoApplicationTests {
+public class DrawingAppTests {
 
 	@Test
 	public void contextLoads() {

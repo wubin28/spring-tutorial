@@ -2,7 +2,24 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 
 <beans>
+    <bean id="pointA" class="com.example.demo.Point">
+        <property name="x" value="0"/>
+        <property name="y" value="0"/>
+    </bean>
+    <bean id="pointB" class="com.example.demo.Point">
+        <property name="x" value="-20"/>
+        <property name="y" value="0"/>
+    </bean>
+    <bean id="pointC" class="com.example.demo.Point">
+        <property name="x" value="20"/>
+        <property name="y" value="0"/>
+    </bean>
     <bean id="triangle" class="com.example.demo.Triangle">
-
+        <property name="pointA" ref="pointA" />
+        <property name="pointB" ref="pointB" />
+        <property name="pointC" ref="pointC" />
+    </bean>
+    <bean id="circle" class="com.example.demo.Circle">
+        <property name="center" ref="pointA" />
     </bean>
 </beans>

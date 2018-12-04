@@ -20,6 +20,6 @@
         <constructor-arg ref="pointC"/>
     </bean>
     <bean id="circle" class="com.example.demo.Circle">
-        <property name="center" ref="pointB" />
+        <constructor-arg ref="pointB"/>
     </bean>
 </beans>

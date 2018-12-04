@@ -3,7 +3,7 @@ package com.example.demo;
 public class Circle implements Shape {
     private Point center;
 
-    public void setCenter(Point center) {
+    public Circle(Point center) {
         this.center = center;
     }
 

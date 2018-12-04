@@ -15,9 +15,9 @@
         <property name="y" value="0"/>
     </bean>
     <bean id="triangle" class="com.example.demo.Triangle">
-        <constructor-arg type="com.example.demo.Point" ref="pointA"/>
-        <constructor-arg type="com.example.demo.Point" ref="pointB"/>
-        <constructor-arg type="com.example.demo.Point" ref="pointC"/>
+        <constructor-arg index="0" ref="pointA"/>
+        <constructor-arg index="1" ref="pointB"/>
+        <constructor-arg index="2" ref="pointC"/>
     </bean>
     <bean id="circle" class="com.example.demo.Circle">
         <constructor-arg type="com.example.demo.Point" ref="pointB"/>

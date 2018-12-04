@@ -31,10 +31,10 @@ public class Triangle implements Shape {
     }
 
     @Override
-    public void draw() {
-        System.out.println("Drawing triangle...");
-        System.out.println("Point A = (" + pointA.getX() + ", " + pointA.getY() + ")");
-        System.out.println("Point B = (" + pointB.getX() + ", " + pointB.getY() + ")");
-        System.out.println("Point C = (" + pointC.getX() + ", " + pointB.getY() + ")");
+    public String draw() {
+        return "Drawing triangle...\n" +
+                "Point A = (" + pointA.getX() + ", " + pointA.getY() + ")\n" +
+                "Point B = (" + pointB.getX() + ", " + pointB.getY() + ")\n" +
+                "Point C = (" + pointC.getX() + ", " + pointB.getY() + ")\n";
     }
 }

@@ -12,8 +12,8 @@ public class Circle implements Shape {
     }
 
     @Override
-    public void draw() {
-        System.out.println("Drawing circle...");
-        System.out.println("Center = (" + center.getX() + ", " + center.getY() + ")");
+    public String draw() {
+        return "Drawing circle...\n" +
+                "Center = (" + center.getX() + ", " + center.getY() + ")\n";
     }
 }

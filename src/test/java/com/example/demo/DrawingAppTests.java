@@ -26,7 +26,7 @@ public class DrawingAppTests {
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		Shape shape = (Shape) context.getBean("circle");
 		assertEquals("Drawing circle...\n" +
-				"Center = (0, 0)\n", shape.draw());
+				"Center = (-20, 0)\n", shape.draw());
 	}
 
 }

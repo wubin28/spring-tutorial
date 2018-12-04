@@ -20,6 +20,6 @@
         <property name="pointC" ref="pointC" />
     </bean>
     <bean id="circle" class="com.example.demo.Circle">
-        <property name="center" ref="pointA" />
+        <property name="center" ref="pointB" />
     </bean>
 </beans>

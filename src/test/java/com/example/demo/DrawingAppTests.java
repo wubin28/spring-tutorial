@@ -21,4 +21,12 @@ public class DrawingAppTests {
 				"Point C = (20, 0)\n", shape.draw());
 	}
 
+	@Test
+	public void should_draw_a_cycle() {
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+		Shape shape = (Shape) context.getBean("circle");
+		assertEquals("Drawing circle...\n" +
+				"Center = (0, 0)\n", shape.draw());
+	}
+
 }

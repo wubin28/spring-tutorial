@@ -6,7 +6,7 @@ import org.springframework.core.io.FileSystemResource;
 
 public class DrawingApp {
     public static Triangle getTriangle() {
-        BeanFactory factory = new XmlBeanFactory(new FileSystemResource("/Users/binwu/OOR/katas/remote/spring-tutorial/demo/src/main/resources/spring.xml"));
+        BeanFactory factory = new XmlBeanFactory(new FileSystemResource("./src/main/resources/spring.xml"));
         return  (Triangle)factory.getBean("triangle");
     }
 }

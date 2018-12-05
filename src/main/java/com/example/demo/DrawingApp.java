@@ -1,12 +1,11 @@
 package com.example.demo;
 
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
-import org.springframework.core.io.FileSystemResource;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class DrawingApp {
     public static Triangle getTriangle() {
-        BeanFactory factory = new XmlBeanFactory(new FileSystemResource("./src/main/resources/spring.xml"));
-        return  (Triangle)factory.getBean("triangle");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+        return (Triangle)context.getBean("triangle");
     }
 }

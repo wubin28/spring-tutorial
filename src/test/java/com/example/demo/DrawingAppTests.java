@@ -8,8 +8,7 @@ public class DrawingAppTests {
 
 	@Test
 	public void should_draw_a_triangle() {
-		Triangle triangle = new Triangle();
+		Triangle triangle = DrawingApp.getTriangle();
 		assertEquals("Drawing triangle...\n", triangle.draw());
 	}
-
 }

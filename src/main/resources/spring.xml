@@ -3,7 +3,7 @@
 
 <beans>
     <bean id="triangle" class="com.example.demo.Triangle">
-        <property name="pointA" ref="zeroPoint-alias"/>
+        <property name="pointA" ref="zeroPoint"/>
         <property name="pointB">
             <bean class="com.example.demo.Point">
                 <property name="x" value="-20" />

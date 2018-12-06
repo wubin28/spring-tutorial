@@ -9,6 +9,8 @@ public class DrawingAppTests {
 	@Test
 	public void should_draw_a_triangle() {
 		Triangle triangle = DrawingApp.getTriangle();
-		assertEquals("Drawing triangle whose type is Equilateral and height is 20", triangle.draw());
+		assertEquals("pointA is Point{x=0, y=0}\n" +
+				"pointB is Point{x=-20, y=0}\n" +
+				"pointC is Point{x=20, y=0}", triangle.draw());
 	}
 }

@@ -1,24 +1,39 @@
 package com.example.demo;
 
 
+
 public class Triangle {
-    private String type;
-    private int height;
+    private Point pointA;
+    private Point pointB;
+    private Point pointC;
 
-    public Triangle(String type) {
-        this.type = type;
+    public void setPointA(Point pointA) {
+        this.pointA = pointA;
     }
 
-    public Triangle(int height) {
-        this.height = height;
+    public Point getPointA() {
+        return pointA;
     }
 
-    public Triangle(String type, int height) {
-        this.type = type;
-        this.height = height;
+    public void setPointB(Point pointB) {
+        this.pointB = pointB;
+    }
+
+    public Point getPointB() {
+        return pointB;
+    }
+
+    public void setPointC(Point pointC) {
+        this.pointC = pointC;
+    }
+
+    public Point getPointC() {
+        return pointC;
     }
 
     public String draw() {
-        return "Drawing triangle whose type is " + type + " and height is " + height;
+        return "pointA is " + pointA.toString() +
+                "\npointB is " + pointB.toString() +
+                "\npointC is " + pointC.toString();
     }
 }

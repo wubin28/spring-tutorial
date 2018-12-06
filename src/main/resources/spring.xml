@@ -3,7 +3,7 @@
 
 <beans>
     <bean id="triangle" class="com.example.demo.Triangle">
-        <property name="pointA" ref="zeroPoint"/>
+        <property name="pointA" ref="zero-point-name"/>
         <property name="pointB">
             <bean class="com.example.demo.Point">
                 <property name="x" value="-20" />
@@ -18,7 +18,7 @@
         </property>
     </bean>
 
-    <bean id="zeroPoint" class="com.example.demo.Point">
+    <bean id="zeroPoint" class="com.example.demo.Point" name="zero-point-name">
         <property name="x" value="0" />
         <property name="y" value="0" />
     </bean>

@@ -3,6 +3,6 @@
 
 <beans>
     <bean id="triangle" class="com.example.demo.Triangle">
-        <property name="type" value="Equilateral"/>
+        <constructor-arg value="Equilateral"/>
     </bean>
 </beans>

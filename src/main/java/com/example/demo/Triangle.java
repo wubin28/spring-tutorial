@@ -4,7 +4,7 @@ package com.example.demo;
 public class Triangle {
     private String type;
 
-    public void setType(String type) {
+    public Triangle(String type) {
         this.type = type;
     }
 

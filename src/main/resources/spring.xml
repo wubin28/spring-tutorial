@@ -4,5 +4,6 @@
 <beans>
     <bean id="triangle" class="com.example.demo.Triangle">
         <constructor-arg value="Equilateral"/>
+        <constructor-arg value="20"/>
     </bean>
 </beans>

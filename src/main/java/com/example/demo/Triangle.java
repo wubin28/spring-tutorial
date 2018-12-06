@@ -11,24 +11,12 @@ public class Triangle {
         this.pointA = pointA;
     }
 
-    public Point getPointA() {
-        return pointA;
-    }
-
     public void setPointB(Point pointB) {
         this.pointB = pointB;
     }
 
-    public Point getPointB() {
-        return pointB;
-    }
-
     public void setPointC(Point pointC) {
         this.pointC = pointC;
-    }
-
-    public Point getPointC() {
-        return pointC;
     }
 
     public String draw() {

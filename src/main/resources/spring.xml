@@ -2,7 +2,7 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 
 <beans>
-    <bean id="triangle" class="com.example.demo.Triangle" autowire="byType">
+    <bean id="triangle" class="com.example.demo.Triangle" autowire="constructor">
 
     </bean>
 

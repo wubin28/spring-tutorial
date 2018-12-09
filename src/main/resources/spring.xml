@@ -3,25 +3,26 @@
 
 <beans>
     <bean id="triangle" class="com.example.demo.Triangle">
-        <property name="pointA" ref="zeroPoint"/>
-        <property name="pointB">
-            <bean class="com.example.demo.Point">
-                <property name="x" value="-20" />
-                <property name="y" value="0" />
-            </bean>
-        </property>
-        <property name="pointC">
-            <bean class="com.example.demo.Point">
-                <property name="x" value="20" />
-                <property name="y" value="0" />
-            </bean>
+        <property name="points">
+            <list>
+                <ref bean="zeroPoint" />
+                <ref bean="point2" />
+                <ref bean="point3" />
+            </list>
         </property>
     </bean>
-    <alias name="triangle" alias="triangle-alias"/>
 
-    <bean id="zeroPoint" class="com.example.demo.Point" name="zero-point-name">
+    <bean id="zeroPoint" class="com.example.demo.Point">
         <property name="x" value="0" />
         <property name="y" value="0" />
     </bean>
-    <alias name="zeroPoint" alias="zeroPoint-alias"/>
+
+    <bean id="point2" class="com.example.demo.Point">
+        <property name="x" value="-20" />
+        <property name="y" value="0" />
+    </bean>
+    <bean id="point3" class="com.example.demo.Point">
+        <property name="x" value="20" />
+        <property name="y" value="0" />
+    </bean>
 </beans>

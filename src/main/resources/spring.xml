@@ -3,20 +3,20 @@
 
 <beans>
     <bean id="triangle" class="com.example.demo.Triangle">
-
+        <constructor-arg index="0" ref="pointA"/>
+        <constructor-arg index="1" ref="pointB"/>
+        <constructor-arg index="2" ref="pointC"/>
     </bean>
-
     <bean id="pointA" class="com.example.demo.Point">
-        <property name="x" value="0" />
-        <property name="y" value="0" />
+        <constructor-arg index="0" value="0"/>
+        <constructor-arg index="1" value="0"/>
     </bean>
-
     <bean id="pointB" class="com.example.demo.Point">
-        <property name="x" value="-20" />
-        <property name="y" value="0" />
+        <constructor-arg index="0" value="-20"/>
+        <constructor-arg index="1" value="0"/>
     </bean>
     <bean id="pointC" class="com.example.demo.Point">
-        <property name="x" value="20" />
-        <property name="y" value="0" />
+        <constructor-arg index="0" value="20"/>
+        <constructor-arg index="1" value="0"/>
     </bean>
 </beans>

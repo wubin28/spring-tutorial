@@ -18,12 +18,12 @@ public class DrawingAppTests {
 	}
 
 	@Test
-	public void the_bean_should_be_singleton_by_default() {
+	public void the_bean_could_be_prototype_by_configuration() {
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		Triangle triangle = context.getBean("triangle", Triangle.class);
 		triangle.changePointA(100, 100);
 		Triangle theSameTriangle = context.getBean("triangle", Triangle.class);
-		assertEquals("Point{x=100, y=100}; Point{x=-20, y=0}; Point{x=20, y=0}; ", theSameTriangle.draw());
+		assertEquals("Point{x=0, y=0}; Point{x=-20, y=0}; Point{x=20, y=0}; ", theSameTriangle.draw());
 		((AbstractApplicationContext)context).close();
 	}
 }

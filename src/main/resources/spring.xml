@@ -2,12 +2,12 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 
 <beans>
-    <bean id="triangle" class="com.example.demo.Triangle">
+    <bean id="triangle" class="com.example.demo.Triangle" scope="prototype">
         <constructor-arg index="0" ref="pointA"/>
         <constructor-arg index="1" ref="pointB"/>
         <constructor-arg index="2" ref="pointC"/>
     </bean>
-    <bean id="pointA" class="com.example.demo.Point">
+    <bean id="pointA" class="com.example.demo.Point" scope="prototype">
         <constructor-arg index="0" value="0"/>
         <constructor-arg index="1" value="0"/>
     </bean>
